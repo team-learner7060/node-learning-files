@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1>Sending Request for Files</h1>
+    <img src="" alt="image" id="image" />
+    <button>Get Image</button>
+    <script>
+      const myHeaders = new Headers();
+      let image = document.querySelector("#image");
+      const button = document.querySelector("button");
+      button.onclick = () => {
+        const myRequest = new Request("flowers.jfif", {
+          method: "GET",
+          headers: myHeaders,
+          mode: "cors",
+          cache: "default",
+        });
+
+        fetch(myRequest)
+          .then((response) => response.blob())
+          .then((myBlob) => {
+            image.src = URL.createObjectURL(myBlob);
+          });
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "\"\"\u001b[D\"\u001b[D\u001b[2~\u001b[D\u001b[2~\"an app for enlisting tasks to perform\"",
+  "main": "backend.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"\"\u001b[DTODO app\""
+  },
+  "keywords": [
+    "\"\"\u001b[DTODO\"\u001b[D",
+    "app\"",
+    "\"\"\u001b[DTask",
+    "Schedular\"",
+    "\"\"\u001b[D"
+  ],
+  "author": "\"\"\u001b[DManirup Manna\"",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "json-server": "^0.17.0",
+    "nodemon": "^2.0.20"
+  }
+}

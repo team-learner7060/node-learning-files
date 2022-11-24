@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.html</title>
+</head>
+<body>
+    <h1>This is a home page</h1>
+    <button><a href="http://localhost:8080/aboutus">About us</a></button>
+    <div id="container">
+
+    </div>
+    <script>
+        let text = "hi";
+        let ele = `<div>
+            <h1>${text}</h1>
+            <h3>${text}</h3>
+            <pre>${text}</pre>
+            <span>${text}</span>
+            <p>${text}</p>
+            </div>`;
+        document.getElementById('container').innerHTML = ele;
+    </script>
+</body>
+</html>
